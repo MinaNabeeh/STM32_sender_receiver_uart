@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>F:\stm32_Project_2021\receiver\receiver\\receiver</ProjectName>
+<ProjectName>F:\STM32_sender_receiver_uart\receiver\receiver\\receiver</ProjectName>
 <CMSIS>..\Drivers\CMSIS</CMSIS>
 <HAL_Driver>C:\Users\Noosa\STM32Cube\Repository\STM32Cube_FW_F1_V1.6.1\Drivers\CMSIS</HAL_Driver>
 

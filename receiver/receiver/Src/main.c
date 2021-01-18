@@ -109,7 +109,7 @@ uint8_t data[8]={'0','0','0','0','0','0','0','0'};
   /* USER CODE BEGIN 3 */
     HAL_GPIO_TogglePin(lezd2_GPIO_Port,lezd2_Pin);
 		HAL_UART_Receive(&huart1,data,sizeof(data),1000);
-		HAL_Delay(50);
+		//HAL_Delay(50);
 		HAL_UART_Transmit(&huart2,data,sizeof(data),1000);
 		HAL_Delay(200);
   }

@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=F:/stm32_Project_2021/receiver/receiver/Inc
+HeaderPath=F:/STM32_sender_receiver_uart/receiver/receiver/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=F:/stm32_Project_2021/receiver/receiver/Src
+SourcePath=F:/STM32_sender_receiver_uart/receiver/receiver/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]

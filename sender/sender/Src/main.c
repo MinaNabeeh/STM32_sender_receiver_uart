@@ -95,7 +95,7 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 	uint8_t data[]="\n 1 Mina 1";
-	uint8_t data2[8]={'M','j','M','x','i','M',' ','M'};
+	uint8_t data2[8]={'H','k','H','l','i','H',' ','P'};
   /* USER CODE END 2 */
 
   /* Infinite loop */
