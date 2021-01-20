@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include --C99
+-I.\RTE\_receiver
+-IC:\Users\Noosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+-IC:\Users\Noosa\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_LD -DUSE_HAL_DRIVER -DSTM32F103x6
+-o lezd2_receiver\stm32f1xx_hal_tim.o --omf_browse lezd2_receiver\stm32f1xx_hal_tim.crf --depend lezd2_receiver\stm32f1xx_hal_tim.d "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"

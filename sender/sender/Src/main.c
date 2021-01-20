@@ -94,7 +94,7 @@ int main(void)
   MX_USART2_UART_Init();
 
   /* USER CODE BEGIN 2 */
-	uint8_t data[]="\n 1 Mina 1";
+	//uint8_t data[]="\n 1 Mina 1";
 	uint8_t data2[8]={'H','k','H','l','i','H',' ','P'};
   /* USER CODE END 2 */
 
@@ -107,7 +107,7 @@ int main(void)
   /* USER CODE BEGIN 3 */
     HAL_GPIO_TogglePin(Lezd_GPIO_Port,Lezd_Pin);		
 		HAL_UART_Transmit(&huart2,data2,sizeof(data2),1000);
-		HAL_Delay(200);
+		HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 

@@ -65,6 +65,7 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
+uint8_t data[8]={0};
 
 /* USER CODE END 0 */
 
@@ -97,7 +98,7 @@ int main(void)
   MX_USART2_UART_Init();
 
   /* USER CODE BEGIN 2 */
-uint8_t data[8]={'0','0','0','0','0','0','0','0'};
+	HAL_UART_Receive_IT(&huart1,data,sizeof(data));
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,9 +109,9 @@ uint8_t data[8]={'0','0','0','0','0','0','0','0'};
 
   /* USER CODE BEGIN 3 */
     HAL_GPIO_TogglePin(lezd2_GPIO_Port,lezd2_Pin);
-		HAL_UART_Receive(&huart1,data,sizeof(data),1000);
+		//HAL_UART_Receive(&huart1,data,sizeof(data),1000);
 		//HAL_Delay(50);
-		HAL_UART_Transmit(&huart2,data,sizeof(data),1000);
+		//HAL_UART_Transmit(&huart2,data,sizeof(data),1000);
 		HAL_Delay(200);
   }
   /* USER CODE END 3 */
@@ -229,7 +230,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+			HAL_UART_Transmit(&huart2,data,sizeof(data),1000);
+		HAL_UART_Receive_IT(&huart1,data,sizeof(data));
+}
 /* USER CODE END 4 */
 
 /**

@@ -1,0 +1,6 @@
+--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I.\RTE\_receiver
+-IC:\Users\Noosa\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+-IC:\Users\Noosa\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F10X_LD SETA 1"
+--list startup_stm32f103x6.lst --xref -o lezd2_receiver\startup_stm32f103x6.o --depend lezd2_receiver\startup_stm32f103x6.d "startup_stm32f103x6.s"
